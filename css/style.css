@@ -67,7 +67,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
-	/*	height: 100vh;*/
+	padding-bottom: 80px;
 }
 
 .title {
@@ -81,3 +81,115 @@ body {
 	padding-left: 112px;
 	margin-bottom: 130px;
 }
+
+.header-slider {
+	max-width: 522px;
+	padding-left: 112px;
+	padding-top: 57px;
+	padding-bottom: 135px;
+}
+
+.header-slider__text {
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 122%;
+	color: #fff;
+}
+
+.slick-prev,
+.slick-next {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	position: absolute;
+	left: 43px;
+}
+
+.slick-prev {
+	top: 0;
+}
+
+.slick-next {
+	bottom: 0;
+}
+
+.slick-dots {
+	list-style: none;
+	position: absolute;
+	left: 35px;
+	top: 58px;
+	bottom: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.slick-dots button {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+	line-height: 117%;
+	opacity: .5;
+	text-align: center;
+}
+
+.slick-active button {
+	opacity: 1;
+	font-size: 32px;
+}
+
+.slick-dots button {
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.slick-dots button:hover {
+	opacity: 1;
+}
+
+.slick-dots button::before {
+	content: '0';
+}
+
+.slick-dots li:nth-child(n + 10) button::before {
+	content: '';
+}
+
+.header__content-btn {
+	display: inline-block;
+	font-family: 'Roboto Slab', serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 132%;
+	color: #fff;
+	padding: 14px 88px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.5);
+	margin-left: 112px;
+	transform: translateY(-100px);
+	transition: all 0.3s linear;
+}
+
+.header__content-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.header__content-box {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 30px;
+	font-size: 18px;
+	line-height: 117%;
+	color: #fff;
+}
+
+.header__content-link--active {
+	font-weight: 700;	
+}
+
+
